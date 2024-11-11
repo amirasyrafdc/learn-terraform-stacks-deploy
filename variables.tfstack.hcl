@@ -3,6 +3,7 @@
 
 variable "regions" {
   type = set(string)
+  default = [ "ap-southeast-1" ]
 }
 
 variable "identity_token" {
@@ -12,7 +13,7 @@ variable "identity_token" {
 
 variable "role_arn" {
   type = string
-  default = " arn:aws:iam::134584031874:role/terraform-hcp-oidc "
+  default = " arn:aws:iam::134584031874:role/terraform-hcp-oidc"
 }
 
 variable "default_tags" {
