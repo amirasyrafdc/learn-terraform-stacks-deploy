@@ -8,7 +8,7 @@ identity_token "aws" {
 deployment "development" {
   inputs = {
     regions        = ["ap-southeast-1"]
-    role_arn       = " arn:aws:iam::134584031874:role/terraform-hcp-oidc "
+    role_arn       = "arn:aws:iam::134584031874:role/terraform-hcp-oidc"
     identity_token = identity_token.aws.jwt
     default_tags   = { stacks-preview-example = "lambda-component-expansion-stack" }
   }
@@ -17,7 +17,7 @@ deployment "development" {
 deployment "production" {
   inputs = {
     regions        = ["ap-southeast-1", "ap-southeast-2"]
-    role_arn       = " arn:aws:iam::134584031874:role/terraform-hcp-oidc "
+    role_arn       = "arn:aws:iam::134584031874:role/terraform-hcp-oidc"
     identity_token = identity_token.aws.jwt
     default_tags   = { stacks-preview-example = "lambda-component-expansion-stack" }
   }
